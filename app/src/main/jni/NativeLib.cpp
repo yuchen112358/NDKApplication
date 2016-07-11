@@ -156,7 +156,13 @@ JNIEXPORT jstring JNICALL Java_io_github_wzzju_ndkapplication_NativeLib_GetCPUTe
 
     char fileP[50];
     char buf[16];
-    sprintf(fileP, "/storage/sdcard0/CPU%dTemp.txt", num);
+    int id = 0;
+    if(num<4){
+        id = num + 4;
+        sprintf(fileP, "/storage/sdcard0/CPU%dTemp.txt", id);
+    }else {
+        strcpy(fileP, "/storage/sdcard0/GPUTemp.txt");
+    }
     fd = open(fileP, O_WRONLY | O_APPEND | O_CREAT, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
     if (fd == -1) {
         return (*env).NewStringUTF("write error!");

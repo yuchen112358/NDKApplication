@@ -83,7 +83,7 @@ public class FloatView extends Service {
     private XYMultipleSeriesDataset mdataset = new XYMultipleSeriesDataset();
 
     private static boolean SENSOR_OPEN = false;
-    private static String[] nonSensorData = new String[17];
+    private static String[] nonSensorData = new String[14];
     private static String[] sensorData;
 
     private long firstTime = 0;
@@ -239,9 +239,6 @@ public class FloatView extends Service {
             nonSensorData[11] = NativeLib.GetCPUTemp(2);
             nonSensorData[12] = NativeLib.GetCPUTemp(3);
             nonSensorData[13] = NativeLib.GetCPUTemp(4);
-            nonSensorData[14] = NativeLib.GetCPUTemp(5);
-            nonSensorData[15] = NativeLib.GetCPUTemp(6);
-            nonSensorData[16] = NativeLib.GetCPUTemp(7);
             //res:="a15V,a15A,a15W,a7V,a7A,a7W,gpuV,gpuA,gpuW,memV,memA,memW\n"
             String vaw = NativeLib.GetINA231();
             String[] vawArray;

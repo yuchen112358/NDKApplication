@@ -43,6 +43,22 @@
             android:text="MHz"
             android:textColor="@color/red"
             android:textSize="16sp" />
+        <TextView
+            android:id="@+id/GPUTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="℃"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
@@ -91,23 +107,6 @@
                 android:text="Hz"
                 android:textColor="@color/red"
                 android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/temp1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="℃"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
         </TableRow>
 
         <TableRow>
@@ -137,22 +136,6 @@
                 android:textColor="@color/red"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/temp2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="℃"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
         </TableRow>
 
         <TableRow>
@@ -182,22 +165,6 @@
                 android:textColor="@color/red"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/temp3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="℃"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
         </TableRow>
 
         <TableRow>
@@ -227,22 +194,6 @@
                 android:textColor="@color/red"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/temp4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="℃"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
         </TableRow>
     </TableLayout>
 
