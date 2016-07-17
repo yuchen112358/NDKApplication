@@ -4,13 +4,13 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:columnCount="2"
-    android:rowCount="4">
+    android:rowCount="3">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="实时数据"
+        android:text="Real Time Data"
         android:textColor="@color/red"
         android:textSize="16sp" />
 
@@ -65,137 +65,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="A7 Cores:CPU1~CPU4"
+        android:text="Temperature of Big Cores"
         android:textColor="@color/red"
         android:textSize="16sp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="A15 Cores:CPU5~CPU8"
+        android:text="Info of Power(A15/A7/GPU/MEM)"
         android:textColor="@color/red"
         android:textSize="16sp" />
-
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="CPU1"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/cpu1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="CPU2"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/cpu2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="CPU3"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/cpu3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="CPU4"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/cpu4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-        </TableRow>
-    </TableLayout>
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -208,23 +87,6 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="CPU5"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/cpu5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
                 android:textColor="@color/red"
                 android:textSize="16sp" />
 
@@ -257,23 +119,6 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/cpu6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
                 android:id="@+id/temp6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -302,23 +147,6 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/cpu7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
                 android:id="@+id/temp7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -343,23 +171,6 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="CPU8"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/cpu8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="@color/red"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Hz"
                 android:textColor="@color/red"
                 android:textSize="16sp" />
 

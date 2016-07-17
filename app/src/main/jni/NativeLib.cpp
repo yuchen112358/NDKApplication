@@ -98,6 +98,7 @@ JNIEXPORT void JNICALL Java_io_github_wzzju_ndkapplication_NativeLib_Init
     char temp[100];
     for (i = 0; i < 8; i++) {
         sprintf(temp, "/sys/devices/system/cpu/cpu%d/cpufreq/cpuinfo_cur_freq", i);
+        ///sys/devices/system/cpu/cpu0d/cpufreq/cpuinfo_cur_freq
         strcpy(cpu_node_list[i], temp);
     }
 }
@@ -125,7 +126,7 @@ JNIEXPORT jstring JNICALL Java_io_github_wzzju_ndkapplication_NativeLib_GetGPUCu
     return (*env).NewStringUTF(freq);
 }
 
-//得到的CPU频率单位是Hz
+//得到的CPU频率单位是KHz
 JNIEXPORT jstring JNICALL Java_io_github_wzzju_ndkapplication_NativeLib_GetCPUCurFreq
         (JNIEnv *env, jclass cls, jint num) {
     int fd, fr;

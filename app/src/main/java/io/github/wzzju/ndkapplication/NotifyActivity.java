@@ -29,14 +29,6 @@ public class NotifyActivity extends AppCompatActivity {
     //mView中的控件
     private View mView;
     private TextView gpuText;
-    private TextView cpu1Text;
-    private TextView cpu2Text;
-    private TextView cpu3Text;
-    private TextView cpu4Text;
-    private TextView cpu5Text;
-    private TextView cpu6Text;
-    private TextView cpu7Text;
-    private TextView cpu8Text;
     private TextView GPUTempText;
     private TextView temp5Text;
     private TextView temp6Text;
@@ -93,21 +85,13 @@ public class NotifyActivity extends AppCompatActivity {
                         memW.setText(vawArray[11]);
                     }
                     String[] nonSensorData = FloatView.getNoSensorData();
-                    if(nonSensorData.length == 14) {
+                    if(nonSensorData.length == 6) {
                         gpuText.setText(nonSensorData[0]);
-                        cpu1Text.setText(nonSensorData[1]);
-                        cpu2Text.setText(nonSensorData[2]);
-                        cpu3Text.setText(nonSensorData[3]);
-                        cpu4Text.setText(nonSensorData[4]);
-                        cpu5Text.setText(nonSensorData[5]);
-                        cpu6Text.setText(nonSensorData[6]);
-                        cpu7Text.setText(nonSensorData[7]);
-                        cpu8Text.setText(nonSensorData[8]);
-                        temp5Text.setText(nonSensorData[9]);
-                        temp6Text.setText(nonSensorData[10]);
-                        temp7Text.setText(nonSensorData[11]);
-                        temp8Text.setText(nonSensorData[12]);
-                        GPUTempText.setText(nonSensorData[13]);
+                        temp5Text.setText(nonSensorData[1]);
+                        temp6Text.setText(nonSensorData[2]);
+                        temp7Text.setText(nonSensorData[3]);
+                        temp8Text.setText(nonSensorData[4]);
+                        GPUTempText.setText(nonSensorData[5]);
 
                     }
                 }
@@ -174,21 +158,13 @@ public class NotifyActivity extends AppCompatActivity {
         wmParams.gravity = Gravity.LEFT | Gravity.TOP;
         wmParams.x = x;
         wmParams.y = y;
-        wmParams.width = 566;
-        wmParams.height = 520;
+        wmParams.width = 520;
+        wmParams.height = 260;
 
         return wmParams;
     }
     private void init() {
         gpuText = (TextView) mView.findViewById(R.id.gpu);
-        cpu1Text = (TextView) mView.findViewById(R.id.cpu1);
-        cpu2Text = (TextView) mView.findViewById(R.id.cpu2);
-        cpu3Text = (TextView) mView.findViewById(R.id.cpu3);
-        cpu4Text = (TextView) mView.findViewById(R.id.cpu4);
-        cpu5Text = (TextView) mView.findViewById(R.id.cpu5);
-        cpu6Text = (TextView) mView.findViewById(R.id.cpu6);
-        cpu7Text = (TextView) mView.findViewById(R.id.cpu7);
-        cpu8Text = (TextView) mView.findViewById(R.id.cpu8);
         GPUTempText = (TextView) mView.findViewById(R.id.GPUTemp);
         temp5Text = (TextView) mView.findViewById(R.id.temp5);
         temp6Text = (TextView) mView.findViewById(R.id.temp6);
