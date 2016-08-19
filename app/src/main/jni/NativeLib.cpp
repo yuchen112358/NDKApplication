@@ -260,7 +260,7 @@ JNIEXPORT jstring JNICALL Java_io_github_wzzju_ndkapplication_NativeLib_GetINA23
 
     memset(res, '\0', 80);
 
-    fd = open("/storage/sdcard0/Power.txt", O_WRONLY | O_APPEND | O_CREAT,
+    fd = open("/storage/sdcard0/Power.csv", O_WRONLY | O_APPEND | O_CREAT,
               S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
     if (fd == -1) {
        return (*env).NewStringUTF("write error");
